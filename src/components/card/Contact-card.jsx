@@ -28,7 +28,9 @@ function ContactCard() {
             Automating boring and repetitive tasks is my motto. 🦭 🇻🇳
           </h1>
           <div className="contact-group">
-            <p className="card-link buzzme">Buzz me</p>
+            <a className="card-link buzzme" href="https://t.me/myanh0105">
+              Buzz me
+            </a>
 
             {socialMedia.map((item, index) => (
               <a
