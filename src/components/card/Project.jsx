@@ -27,7 +27,7 @@ function Projects() {
             <div>
               {p.projectName}
               <a href={p.link} target="_blank" rel="noopener noreferrer">
-                <img className="image-marquee" src={p.image} />
+                <img className="image-marquee" src={p.image} alt="..." />
               </a>
             </div>
           ))}
