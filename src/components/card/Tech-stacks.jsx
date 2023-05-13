@@ -12,7 +12,12 @@ function TechStack() {
   ];
   return (
     <div className="card-container">
-      <div className="card border-dark tech-card d-flex align-items-center">
+      <div
+        className="card border-dark tech-card d-flex align-items-center"
+        style={{
+          margin: "10px",
+        }}
+      >
         <div className="card-body">
           <h6 className="card-title">
             Hi, Anne here! 🙋‍♀️ I'm a software developer with expertise in

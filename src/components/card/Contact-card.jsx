@@ -22,7 +22,12 @@ function ContactCard() {
 
   return (
     <div className="card-container">
-      <div className="card border-dark contact-card">
+      <div
+        className="card border-dark"
+        style={{
+          margin: "10px",
+        }}
+      >
         <div className="card-body">
           <h1 className="card-title">
             Automating boring and repetitive tasks is my motto. 🦭 🇻🇳

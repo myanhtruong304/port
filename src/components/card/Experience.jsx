@@ -81,8 +81,7 @@ function Experience() {
               data-content={company.position}
               style={{
                 backgroundColor: "#ffffff",
-                margin: "10px",
-                marginLeft: "0px",
+                margin: "0px 10px 10px",
                 "--bg-color": company.bgColor,
                 color: "black",
               }}

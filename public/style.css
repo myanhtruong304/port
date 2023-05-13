@@ -2,10 +2,8 @@ header {
     color: black;
 }
 .body {
-    margin-left: 300px;
     margin-top: 60px;
     margin-bottom: 60px;
-    margin-right: 300px;;
 }
 
 h1 {
@@ -18,23 +16,24 @@ h6 {
     word-spacing:0.3ch;
     line-height: 2.2ch;
 }
+
 .gradient-background {
     background: linear-gradient(300deg, #B2D3DB, #E8B5D6, #FFE7CF);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
   }
   
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
   }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .navbar #brand-info{
     font-size: xx-large;
     font-family:'Noto Sans', sans-serif;
@@ -55,27 +54,24 @@ h6 {
 }
 
 .sign-up-link {
-    border: 1px solid black;
-    border-radius: 20px;
-    background-color: #FFCCCC;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #FFCCCC;
   }
 
 .buzzme{
-    border: 1px solid black;
-    border-radius: 20px;
-    background-color: #FFCCCC;
-    padding: 8px;
-    color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #FFCCCC;
+  padding: 8px;
+  color: black;
 }
 
 .contact-group {
-    position: absolute;
-    margin-bottom: 30px;
-    bottom: 0;
-    font-size: smaller;
-}
-.contact-card{
-    margin-right: 10px;
+  position: absolute;
+  margin-bottom: 30px;
+  bottom: 0;
+  font-size: smaller;
 }
 .brand-name {
     margin-left: 10px;
@@ -83,36 +79,38 @@ h6 {
 }
 
 .card {
-    border: 1px solid #ccc;
-    width: 25rem;
-    height: 25rem;
-    border-radius: 15px;
-    max-width: 100%;
-}
-
-.image-card {
-    display: inline-flex;
-    width: 20rem;
-    background-color: #FFCCCC;
-    margin-right: 10px;
+  border: 1px solid #ccc;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 15px;
+  flex-basis: 0;
+  flex-grow: 1;
 }
 
 .card-container{
     display: flex;
-    flex-wrap: nowrap; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    max-width: 1200px; /* Set a max-width for the container */
-    margin: 0 auto;
-    justify-content:center
+    flex-wrap: wrap;
+    align-items:flex-start;
+    max-width: 100%;
+    justify-content:center;
 }
 
-.avatar {
-    border-radius: 50%;
-    height: 15rem;
-    width: 15rem;
-    border: 1px solid black;
-    margin-top: 2rem;
+:root {
+  --circle-size: 200px;
 }
+
+@media (min-width: 768px) {
+  :root {
+    --circle-size: 250px;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --circle-size: 300px;
+  }
+}
+
 
 .tech-stack {
     position: absolute;
@@ -127,11 +125,9 @@ h6 {
 .skills {
     border: 1px solid black;
     border-radius: 15px;
-    background-color: #F9DCE0;
-    color: black;
     text-align: center;
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .odd {
     background-color: #EFBCDB;
@@ -142,56 +138,51 @@ h6 {
 }
 
 .work-image {
-    border: 1px solid black;
-    border-radius: 15px;
-    height: 320px;
-    width: 100px;
-    margin-right: 10px;
-    flex-basis: 0;
-    flex-grow: 1;
-    object-fit:cover;
-    position: relative;
-    overflow: hidden;
-  }
-  .work-image .carousel-inner {
-    height: 100%;
-  }
-  
-  .work-image .carousel-item {
-    height: 100%;
-  }
-  
-  .experience {
-    border: 1px solid black;
-    border-radius: 15px;
-    height: 320px;
-    width: 900px;
-    flex-basis: 0;
-    flex-grow: 1;
-    padding: 20px;
-  }
+  border: 1px solid black;
+  border-radius: 15px;
+  height: 320px;
+  width: 100px;
+  margin-right: 10px;
+  flex-basis: 0;
+  flex-grow: 1;
+  object-fit:fill;
+  position: relative;
+  overflow: hidden;
+}
+.work-image .carousel-inner {
+  height: 100%;
+}
 
-  .carousel-control-prev, .carousel-control-next {
-    opacity: 0;
-    border: none;
-    background-color: transparent;
-    color: black;
-  }
-  .visually-hidden{
-    color: black;
-  }
+.work-image .carousel-item {
+  height: 100%;
+}
 
-  .marquee-items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 900px;
-  }
-  .build {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 50px;
-    margin: 60px;
-  }
-  .image-marquee {
-    height: 120px;
-  }
+.experience {
+  border: 1px solid black;
+  border-radius: 15px;
+  height: 320px;
+  width: 900px;
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  opacity: 0;
+  border: none;
+  background-color: transparent;
+  color: black;
+}
+.visually-hidden{
+  color: black;
+}
+
+.build {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  padding: 30px;
+  font-size: 50px;
+}
+.image-marquee {
+  height: 120px;
+}

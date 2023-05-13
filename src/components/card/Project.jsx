@@ -20,19 +20,23 @@ function Projects() {
     },
   ];
   return (
-    <div className="card-container">
-      <Marquee>
-        <div className="marquee-items ">
-          {projects.map((p) => (
-            <div>
-              {p.projectName}
+    <div className="card-container" style={{ width: "900px" }}>
+      <div
+        className="marquee-container"
+        style={{
+          width: "100%",
+        }}
+      >
+        <Marquee pauseOnHover={true} speed={200}>
+          {projects.map((p, index) => (
+            <div style={{ marginLeft: "100px", marginRight: "100px" }}>
               <a href={p.link} target="_blank" rel="noopener noreferrer">
                 <img className="image-marquee" src={p.image} alt="..." />
               </a>
             </div>
           ))}
-        </div>
-      </Marquee>
+        </Marquee>
+      </div>
     </div>
   );
 }

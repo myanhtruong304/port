@@ -12,11 +12,26 @@ function ImageCard() {
 
   return (
     <div className="card-container">
-      <div className="card border-dark image-card align-items-center">
+      <div
+        className="card border-dark align-items-center"
+        style={{
+          display: "inline-flex",
+          backgroundColor: "#FFCCCC",
+          margin: "10px",
+          width: "60%",
+        }}
+      >
         <img
-          className="avatar border-img"
+          className="rounded-circle bg-dark d-flex align-items-center justify-content-center text-white"
           src="./image/avatar.jpeg"
           alt="..."
+          style={{
+            borderRadius: "50%",
+            height: "var(--circle-size)",
+            width: "var(--circle-size)",
+            border: `1px solid black`,
+            margin: "1rem",
+          }}
         />
         <div className="tech-stack ">
           {techStack.map((tech) => (

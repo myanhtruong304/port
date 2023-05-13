@@ -17,13 +17,13 @@ function App() {
           <ImageCard />
           <TechStack />
         </div>
-        <div className="build card-container">
+        <div className="build">
           <div>What I builded</div>
         </div>
         <div className="card-container">
           <Projects />
         </div>
-        <div className="build card-container">
+        <div className="build">
           <div>My Journey</div>
         </div>
         <div className="card-container">
