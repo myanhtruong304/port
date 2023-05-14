@@ -12,7 +12,10 @@ function App() {
     <div>
       <Header />
       <div className="body">
-        <div className="card-container">
+        <div
+          className="card-container"
+          style={{ display: "flex", flexWrap: "nowrap", overflowX: "auto" }}
+        >
           <ContactCard />
           <ImageCard />
           <TechStack />
@@ -30,7 +33,7 @@ function App() {
           <Experience />
         </div>
       </div>
-      <Footer />
+      <Footer className="footer" />
     </div>
   );
 }

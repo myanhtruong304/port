@@ -21,38 +21,34 @@ function ContactCard() {
   ];
 
   return (
-    <div className="card-container">
-      <div
-        className="card border-dark"
-        style={{
-          margin: "10px",
-        }}
-      >
-        <div className="card-body">
-          <h1 className="card-title">
-            Automating boring and repetitive tasks is my motto. 🦭 🇻🇳
-          </h1>
-          <div className="contact-group">
-            <a className="card-link buzzme" href="https://t.me/myanh0105">
-              Buzz me
-            </a>
+    <div
+      className="card border-dark"
+      style={{
+        width: "45%",
+        padding: "30px",
+        margin: "10px 0px 10px 10px",
+      }}
+    >
+      <h1>Automating boring and repetitive tasks is my motto. 🦭 🇻🇳</h1>
+      <div className="contact-group">
+        <a className="card-link buzzme" href="https://t.me/myanh0105">
+          Buzz me
+        </a>
 
-            {socialMedia.map((item, index) => (
-              <a
-                key={index}
-                href={item.link}
-                className="card-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i
-                  className={`fa-brands ${item.icon} fa-bounce fa-2xl`}
-                  style={{ color: item.color }}
-                ></i>
-              </a>
-            ))}
-          </div>
-        </div>
+        {socialMedia.map((item, index) => (
+          <a
+            key={index}
+            href={item.link}
+            className="card-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i
+              className={`fa-brands ${item.icon} fa-bounce fa-2xl`}
+              style={{ color: item.color }}
+            ></i>
+          </a>
+        ))}
       </div>
     </div>
   );

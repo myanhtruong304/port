@@ -20,7 +20,7 @@ function Projects() {
     },
   ];
   return (
-    <div className="card-container" style={{ width: "900px" }}>
+    <div className="card-container" style={{ width: "100%" }}>
       <div
         className="marquee-container"
         style={{

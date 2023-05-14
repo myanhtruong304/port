@@ -7,7 +7,7 @@ function Footer() {
         className="text-center p-3"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
-        Copyright &copy;{new Date().getFullYear()}
+        Anne Ng. &copy;{new Date().getFullYear()}
       </div>
     </footer>
   );

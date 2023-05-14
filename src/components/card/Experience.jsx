@@ -89,7 +89,7 @@ function Experience() {
               <img
                 src={company.imgSrc}
                 alt="..."
-                style={{ width: "20x", height: "100px", borderRadius: "50%" }}
+                style={{ width: "100px", height: "100px", borderRadius: "50%" }}
               />
               {company.name}
             </div>
@@ -154,7 +154,7 @@ function Experience() {
                   className={`skills tech-item ${
                     index % 2 === 1 ? "odd" : "even"
                   }`}
-                  style={{ marginRight: "8px", padding: "10px" }}
+                  style={{ marginRight: "8px", padding: "5px" }}
                 >
                   {techItem}{" "}
                 </p>

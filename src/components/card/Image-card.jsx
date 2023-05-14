@@ -11,41 +11,39 @@ function ImageCard() {
   ];
 
   return (
-    <div className="card-container">
-      <div
-        className="card border-dark align-items-center"
+    <div
+      className="card border-dark align-items-center"
+      style={{
+        display: "inline-flex",
+        backgroundColor: "#FFCCCC",
+        margin: "10px 0px 10px 10px",
+        width: "40%",
+      }}
+    >
+      <img
+        className="rounded-circle bg-dark d-flex align-items-center justify-content-center text-white"
+        src="./image/avatar.jpeg"
+        alt="..."
         style={{
-          display: "inline-flex",
-          backgroundColor: "#FFCCCC",
-          margin: "10px",
-          width: "60%",
+          borderRadius: "50%",
+          height: "var(--circle-size)",
+          width: "var(--circle-size)",
+          border: `1px solid black`,
+          margin: "30px",
         }}
-      >
-        <img
-          className="rounded-circle bg-dark d-flex align-items-center justify-content-center text-white"
-          src="./image/avatar.jpeg"
-          alt="..."
-          style={{
-            borderRadius: "50%",
-            height: "var(--circle-size)",
-            width: "var(--circle-size)",
-            border: `1px solid black`,
-            margin: "1rem",
-          }}
-        />
-        <div className="tech-stack ">
-          {techStack.map((tech) => (
-            <i
-              key={tech.name}
-              className={tech.icon}
-              style={{
-                color: tech.color,
-                marginRight: "10px",
-                marginLeft: "10px",
-              }}
-            ></i>
-          ))}
-        </div>
+      />
+      <div className="tech-stack ">
+        {techStack.map((tech) => (
+          <i
+            key={tech.name}
+            className={tech.icon}
+            style={{
+              color: tech.color,
+              marginRight: "10px",
+              marginLeft: "10px",
+            }}
+          ></i>
+        ))}
       </div>
     </div>
   );

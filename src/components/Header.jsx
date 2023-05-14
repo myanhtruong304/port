@@ -60,6 +60,12 @@ function Header() {
           </div>
         </div>
       </nav>
+      <div className="body" style={{ margin: "0" }}>
+        <div className="header-elements">
+          <h1>Let automation be our superhero!</h1>
+          <img src="./image/header1.png" alt="..." />
+        </div>
+      </div>
     </header>
   );
 }
